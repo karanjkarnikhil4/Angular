@@ -9,4 +9,14 @@
 </div>
 <app-warning-alert></app-warning-alert>
 <app-success-alert></app-success-alert>
+
+<div class="container">
+    <input type="text" class="form-control" [(ngModel)]= "userName">
+    <p>{{userName}}</p>
+    <button class="btn primary-btn" [disabled]="getButtonState()" (click)="changeButtonState()">Click me to disable</button>
+    </div>
 </div>
+
+
+   
+    
