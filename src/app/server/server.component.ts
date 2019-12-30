@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class ServerComponent{
 
+    serverId:number = 10;
+    serverStatus:string = 'offline';
+
+
+    getserverStatus():string
+    {
+        return this.serverStatus;
+    }
 }
